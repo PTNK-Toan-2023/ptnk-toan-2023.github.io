@@ -43,9 +43,9 @@ p {
 
   background-image: url("gallery-img/gallery-textbg.jpg");
   background-repeat: repeat;
+
   padding: 3px 8px 0px 8px;
   line-height: 31.5px;
-
   height: fit-content;
 }
 .section-desc-title {
@@ -56,7 +56,7 @@ p {
 }
 
 #section1 {
-  height: 800px;
+  height: 900px;
 }
 #section-img1 {
   transform: rotate(-5deg);
@@ -92,8 +92,8 @@ p {
   transform: rotate(-7deg);
 }
 #img3 {
-  width: 700px;
-  height: 700px;
+  width: 600px;
+  height: 500px;
 }
 #section-desc3 {
   transform: rotate(4deg);
@@ -107,8 +107,8 @@ p {
   transform: rotate(8deg);
 }
 #img4 {
-  width: 700px;
-  height: 700px;
+  width: 800px;
+  height: 800px;
 }
 #section-desc4 {
   transform: rotate(-4deg);
