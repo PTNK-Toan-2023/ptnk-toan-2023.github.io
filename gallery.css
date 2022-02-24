@@ -1,0 +1,116 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+body {
+  box-sizing: border-box;
+  background-image: url("gallery-img/gallery-bg.jpg");
+  background-repeat: repeat;
+  margin-bottom: 150px;
+}
+p {
+  margin: 0px;
+  padding: 0px;
+}
+.textbox,
+.imgbox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 1000px;
+}
+.section-img {
+  line-height: 0px;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 3px 3px 20px black, inset 0px 0px 3px black;
+}
+.section-desc {
+  font: 425 21px "Brush Script MT", "Brush Script Std", cursive;
+  text-align: justify;
+
+  filter: drop-shadow(5px 5px 10px black);
+
+  background-image: url("gallery-img/gallery-textbg.jpg");
+  background-repeat: repeat;
+  padding: 3px 8px 0px 8px;
+  line-height: 31.5px;
+
+  height: fit-content;
+}
+.section-desc-title {
+  font-size: 62.5px;
+  font-weight: 530;
+  line-height: 63px;
+  margin-bottom: 4px;
+}
+
+#section1 {
+  height: 800px;
+}
+#section-img1 {
+  transform: rotate(-5deg);
+}
+#img1 {
+  width: 600px;
+  height: 500px;
+}
+#section-desc1 {
+  transform: rotate(3deg);
+  width: 800px;
+}
+
+#section2 {
+  height: 700px;
+}
+#section-img2 {
+  transform: rotate(10deg);
+}
+#img2 {
+  width: 700px;
+  height: 700px;
+}
+#section-desc2 {
+  transform: rotate(-8deg);
+  width: 800px;
+}
+
+#section3 {
+  height: 1000px;
+}
+#section-img3 {
+  transform: rotate(-7deg);
+}
+#img3 {
+  width: 700px;
+  height: 700px;
+}
+#section-desc3 {
+  transform: rotate(4deg);
+  width: 600px;
+}
+
+#section4 {
+  height: 900px;
+}
+#section-img4 {
+  transform: rotate(8deg);
+}
+#img4 {
+  width: 700px;
+  height: 700px;
+}
+#section-desc4 {
+  transform: rotate(-4deg);
+  width: 550px;
+}
