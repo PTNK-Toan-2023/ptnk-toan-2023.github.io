@@ -11,13 +11,11 @@ body {
   width: 80%;
   height: fit-content;
   margin-inline: auto;
-  padding: 8vh 0 8vh 0;
 
   position: relative;
   background-image: url("gallery-img/gallery-bg.jpg");
   background-repeat: repeat;
 }
-
 .textbox,
 .imgbox {
   width: 50%;
@@ -62,6 +60,15 @@ body {
   font-weight: 530;
   line-height: 63px;
   margin-bottom: 4px;
+}
+.gallery-title {
+  font: 800 5rem "Brush Script MT", "Brush Script Std", cursive;
+  color: rgb(166, 191, 255);
+
+  text-align: center;
+  padding: 10px 0 10px 0;
+  margin-inline: auto;
+  text-shadow: 0px 0px 15px rgb(29, 29, 255);
 }
 
 #section-img1 {
