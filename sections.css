@@ -1,0 +1,119 @@
+#section-img1a {
+  transform: rotate(-5deg);
+}
+#section-img1a:hover {
+  transform: scale(1.1);
+}
+
+#section-img1b {
+  transform: rotate(-5deg);
+}
+#section-img1b:hover {
+  transform: scale(1.1);
+}
+
+#section-img1c {
+  transform: rotate(-5deg);
+}
+#section-img1c:hover {
+  transform: scale(1.1);
+}
+#section-img1c.zoom {
+  position: absolute;
+  z-index: 15;
+  transform: scale(1.6) translate(0, 0);
+}
+#section-desc1 {
+  background-image: url("gallery-img/gallery-textbg.jpg");
+  background-repeat: repeat;
+  transform: rotate(3deg);
+}
+#section-desc1:hover {
+  transform: scale(1.1);
+}
+
+#section-img2 {
+  transform: rotate(10deg);
+}
+#section-img2:hover {
+  transform: scale(1.1);
+}
+
+#section-desc2 {
+  background-color: rgb(186, 221, 210);
+  transform: rotate(-8deg);
+}
+#section-desc2:hover {
+  transform: scale(1.1);
+}
+
+#section-img3 {
+  transform: rotate(-7deg);
+}
+#section-img3:hover {
+  transform: scale(1.1);
+}
+
+#section-desc3 {
+  background-color: rgb(221, 140, 151);
+  transform: rotate(4deg);
+}
+#section-desc3:hover {
+  transform: scale(1.1);
+}
+
+#section-img4 {
+  transform: rotate(8deg);
+}
+#section-img4:hover {
+  transform: scale(1.1);
+}
+
+#section-desc4 {
+  background-color: rgb(160, 162, 191);
+  transform: rotate(-4deg);
+}
+#section-desc4:hover {
+  transform: scale(1.1);
+}
+
+#section-img1a.zoom {
+  position: fixed;
+  z-index: 15;
+  transform: scale(1.5);
+}
+#section-img1b.zoom {
+  z-index: 15;
+  transform: scale(1.5);
+}
+#section-desc1.zoom {
+  z-index: 15;
+  transform: scale(1.3);
+}
+
+#section-img2.zoom {
+  z-index: 15;
+  transform: scale(1.5);
+}
+#section-desc2.zoom {
+  z-index: 15;
+  transform: scale(1.3);
+}
+
+#section-img3.zoom {
+  z-index: 15;
+  transform: scale(1.5);
+}
+#section-desc3.zoom {
+  z-index: 15;
+  transform: scale(1.3);
+}
+
+#section-img4.zoom {
+  z-index: 15;
+  transform: scale(1.5);
+}
+#section-desc4.zoom {
+  z-index: 15;
+  transform: scale(1.3);
+}

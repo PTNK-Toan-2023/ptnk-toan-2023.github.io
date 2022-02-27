@@ -2,156 +2,133 @@
   margin: 0px;
   padding: 0px;
   border: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: fit-content;
+}
+html {
+  --viewportWidth: 100vw;
+  overflow-x: hidden;
 }
 body {
-  margin-bottom: 150px;
+  background-color: grey;
+}
+hr {
+  width: 50%;
+  height: 1ch;
+  margin: 5vh auto 5vh auto;
+
+  background-color: #553f22;
+  box-shadow: 0px 0px 10px black;
+}
+.cover {
+  visibility: hidden;
+
+  background: black;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.5s linear, visibility 0.5s linear;
 }
 
-.gallery-pane {
-  width: 80%;
-  height: fit-content;
+.gallery-title {
+  font: 800 min(5rem, 10vw) "Brush Script MT", "Brush Script Std", cursive;
+  color: rgb(255, 219, 166);
+  text-align: center;
+
+  padding: 10px 0 10px 0;
   margin-inline: auto;
 
-  position: relative;
-  background-image: url("gallery-img/gallery-bg.jpg");
-  background-repeat: repeat;
+  text-shadow: 0px 0px 15px rgb(255, 146, 29);
 }
-.textbox,
-.imgbox {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.gallery-pane {
+  width: 95vw;
+  height: fit-content;
+  padding: 0 0 10vh 0;
+  margin: 3rem auto 3rem auto;
+  border: 1rem solid transparent;
+
+  border-image: url("gallery-img/gallery-bg.jpg") 25% repeat;
+  background-image: url("gallery-img/gallery-content-bg.jpg");
+
+  background-repeat: repeat;
+  box-shadow: 0px 0px 25px black, inset 3px 3px 25px rgb(60, 60, 60), inset -3px -3px 25px rgb(60, 60, 60);
 }
 .content-section {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  position: relative;
+
   width: 100%;
-  height: 80vh;
+  height: fit-content;
+  margin: 5vh 0 0 0;
+
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.textbox,
+.imgbox {
+  display: flex;
+  flex: 1 1 50%;
+  align-items: center;
+  justify-content: center;
+
+  height: min(60vh, 50%);
+  margin: 5vh auto 5vh auto;
 }
 .section-img {
-  line-height: 0px;
+  line-height: 0;
   background-color: white;
-  padding: 10px;
+
+  z-index: 2;
+  padding: 0.5rem;
+
   box-shadow: 3px 3px 20px black, inset 0px 0px 3px black;
 
-  transition: all 0.1s ease-in-out;
-}
-.caption {
-  background-color: rgba(0, 255, 255, 0.5);
-  z-index: 0;
+  transition-property: width, height, max-height, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 .section-desc {
   font: 425 1.2rem "Brush Script MT", "Brush Script Std", cursive;
-  text-align: justify;
+  line-height: min(8vh, 31.5px);
 
-  filter: drop-shadow(5px 5px 10px black);
-
-  padding: 3px 8px 0px 8px;
-  line-height: 31.5px;
+  max-height: 45vh;
+  min-width: 16ch;
+  width: min(75%, 50ch);
   height: fit-content;
 
-  transition: all 0.1s ease-in-out;
+  z-index: 2;
+  overflow: hidden;
+  padding: 3px 8px 0px 8px;
+
+  filter: drop-shadow(5px 5px 10px black);
+  transition-property: width, height, max-height, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.section-desc:hover,
+.section-img:hover {
+  cursor: pointer;
+}
+
+.img-cont {
+  max-width: 35vw;
+  max-height: 50vh;
 }
 .section-desc-title {
-  font-size: calc(1rem + 31.5px);
-  font-weight: 530;
-  line-height: 63px;
+  font-size: max(16px, 1.5rem);
+  font-weight: 700;
+  line-height: min(16vh, 31.5px);
   margin-bottom: 4px;
-}
-.gallery-title {
-  font: 800 5rem "Brush Script MT", "Brush Script Std", cursive;
-  color: rgb(166, 191, 255);
-
-  text-align: center;
-  padding: 10px 0 10px 0;
-  margin-inline: auto;
-  text-shadow: 0px 0px 15px rgb(29, 29, 255);
-}
-
-#section-img1 {
-  transform: rotate(-5deg);
-}
-#section-img1:hover {
-  transform: rotate(5deg);
-  transform: scale(1.1);
-}
-#img1 {
-  width: 30vw;
-  height: 20vw;
-}
-#section-desc1 {
-  background-image: url("gallery-img/gallery-textbg.jpg");
-  background-repeat: repeat;
-  transform: rotate(3deg);
-  width: 30vw;
-}
-#section-desc1:hover {
-  transform: rotate(-3deg);
-  transform: scale(1.1);
-}
-
-#section-img2 {
-  transform: rotate(10deg);
-}
-#section-img2:hover {
-  transform: rotate(-10deg);
-  transform: scale(1.1);
-}
-#img2 {
-  width: 30vw;
-  height: 20vw;
-}
-#section-desc2 {
-  background-color: rgb(186, 221, 210);
-  transform: rotate(-8deg);
-  width: 30vw;
-}
-#section-desc2:hover {
-  transform: rotate(8deg);
-  transform: scale(1.1);
-}
-
-#section-img3 {
-  transform: rotate(-7deg);
-}
-#section-img3:hover {
-  transform: rotate(7deg);
-  transform: scale(1.1);
-}
-#img3 {
-  width: 30vw;
-  height: 20vw;
-}
-#section-desc3 {
-  background-color: rgb(221, 140, 151);
-  transform: rotate(4deg);
-  width: 30vw;
-}
-#section-desc3:hover {
-  transform: rotate(-4deg);
-  transform: scale(1.1);
-}
-
-#section-img4 {
-  transform: rotate(8deg);
-}
-#section-img4:hover {
-  transform: rotate(-8deg);
-  transform: scale(1.1);
-}
-#img4 {
-  width: 30vw;
-  height: 20vw;
-}
-#section-desc4 {
-  background-color: rgb(160, 162, 191);
-  transform: rotate(-4deg);
-  width: 30vw;
-}
-#section-desc4:hover {
-  transform: rotate(4deg);
-  transform: scale(1.1);
 }

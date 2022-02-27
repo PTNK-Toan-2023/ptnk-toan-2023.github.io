@@ -7,148 +7,129 @@
     <title>Gallery</title>
 
     <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="sections.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="gallery-zoom.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal({
-        viewFactor: 0.3,
+        viewOffset: {
+          bottom: 25,
+        },
+        viewFactor: 0.1,
         duration: 1000,
       });
     </script>
   </head>
   <body>
+    <div class="cover"></div>
     <div class="gallery-pane">
       <h1 class="gallery-title">GALLERY OF 11 TOÁN</h1>
-      <div class="content-section" id="section1">
+      <div class="content-section" id="section1a">
         <div class="imgbox">
-          <figure class="section-img" id="section-img1">
-            <img src="gallery-img/gallery-dummy1.jpg" alt="dummyimg1" id="img1" />
-            <figcaption class="caption" id="img1-caption">Image 1 caption</figcaption>
-          </figure>
+          <div class="section-img" id="section-img1a">
+            <img src="gallery-img/gallery-dummy1.jpg" alt="dummyimg1" loading="lazy" class="img-cont" id="img1a" />
+          </div>
+        </div>
+        <div class="imgbox">
+          <div class="section-img" id="section-img1b">
+            <img src="gallery-img/gallery-dummy1.jpg" alt="dummyimg1" loading="lazy" class="img-cont" id="img1b" />
+          </div>
         </div>
         <div class="textbox">
-          <div class="section-desc" id="section-desc1">
+          <section class="section-desc" id="section-desc1">
             <h2 class="section-desc-title" style="text-align: left">Big boi title 1</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum cum sint
-              aliquam molestiae ea aut reiciendis reprehenderit dolore, facere neque dignissimos. At
-              laboriosam tempora consequuntur, aperiam dicta consectetur vitae id ipsam porro
-              laudantium maiores debitis, deserunt recusandae corrupti obcaecati. Ipsa, vero?
-              Dolores impedit aspernatur ex deleniti necessitatibus quod beatae.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo est dignissimos atque aliquid porro molestias in dolor maiores dolorem
+              natus.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo est dignissimos atque
-              aliquid porro molestias in dolor maiores dolorem natus.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed officiis cupiditate dolorem qui quod, explicabo hic accusamus impedit
+              commodi? Porro nam impedit ratione atque excepturi repudiandae corporis voluptas, obcaecati velit eos quidem? Iusto, unde adipisci.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <hr id="hr1-2" />
+
+      <div class="content-section" id="section2">
+        <div class="textbox">
+          <section class="section-desc" id="section-desc2">
+            <h2 class="section-desc-title" style="text-align: right">Big boi title 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptatibus ipsa est dolores modi? Voluptatem hic, inventore adipisci
+              cum iusto expedita assumenda alias repellat? Accusamus iusto ducimus sit corrupti, ab totam eligendi dignissimos vero repellendus
+              cupiditate, pariatur, magni alias nulla ut id dolorum veritatis non? Tempora possimus tempore praesentium quasi amet! Iusto optio nam
+              cupiditate id vel, alias incidunt quisquam velit, ipsam molestias repudiandae esse beatae. Alias aspernatur dolores vitae excepturi quod
+              facere expedita ab!
             </p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio facilis ab
-              praesentium odio provident voluptatibus et deleniti corrupti vitae voluptate nihil
-              iusto aliquid cumque dicta eius sit dolorum quos harum atque, consequatur velit?
-              Minus, esse ducimus voluptatibus sequi aliquam distinctio placeat, inventore ullam
-              sit, reprehenderit aliquid quia fuga est. Provident rem voluptatum voluptas inventore
-              id officiis, libero aliquam vitae veritatis, iusto fugiat deserunt ipsam perferendis
-              recusandae error odit nulla deleniti!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias cumque sequi expedita odit alias reiciendis inventore doloribus
+              quibusdam explicabo, soluta voluptatibus ut reprehenderit exercitationem animi sunt pariatur laudantium, dignissimos fuga quam impedit
+              recusandae vitae minus asperiores omnis. Enim, dicta hic cumque accusantium impedit magnam eaque dolores ducimus culpa ex facere odio
+              delectus id accusamus quae nulla commodi harum saepe numquam reiciendis! Provident saepe odit cum facere excepturi repudiandae repellat,
+              harum minima in aliquid ipsa deserunt velit officiis omnis temporibus exercitationem dolores quod eius commodi. Unde quos, repellendus
+              maxime expedita maiores esse quibusdam! Inventore laborum, ipsam provident dignissimos illo atque facere asperiores obcaecati modi,
+              repellat dolorem ex minus maxime voluptatem deserunt saepe nam. Quidem quisquam dolorum corrupti nam accusantium deserunt consectetur
+              ex? Impedit cumque at maiores.
             </p>
+          </section>
+        </div>
+        <div class="imgbox">
+          <div class="section-img" id="section-img2">
+            <img src="gallery-img/gallery-dummy2.jpg" alt="dummyimg2" loading="lazy" class="img-cont" id="img2" />
           </div>
         </div>
       </div>
 
-      <div class="content-section" id="section2">
-        <div class="textbox">
-          <div class="section-desc" id="section-desc2">
-            <h2 class="section-desc-title" style="text-align: right">Big boi title 2</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum cum sint
-              aliquam molestiae ea aut reiciendis reprehenderit dolore, facere neque dignissimos. At
-              laboriosam tempora consequuntur, aperiam dicta consectetur vitae id ipsam porro
-              laudantium maiores debitis, deserunt recusandae corrupti obcaecati. Ipsa, vero?
-              Dolores impedit aspernatur ex deleniti necessitatibus quod beatae.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo est dignissimos atque
-              aliquid porro molestias in dolor maiores dolorem natus.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio facilis ab
-              praesentium odio provident voluptatibus et deleniti corrupti vitae voluptate nihil
-              iusto aliquid cumque dicta eius sit dolorum quos harum atque, consequatur velit?
-              Minus, esse ducimus voluptatibus sequi aliquam distinctio placeat, inventore ullam
-              sit, reprehenderit aliquid quia fuga est. Provident rem voluptatum voluptas inventore
-              id officiis, libero aliquam vitae veritatis, iusto fugiat deserunt ipsam perferendis
-              recusandae error odit nulla deleniti!
-            </p>
-          </div>
-        </div>
-        <div class="imgbox">
-          <div class="section-img" id="section-img2">
-            <img src="gallery-img/gallery-dummy2.jpg" alt="dummyimg2" id="img2" />
-          </div>
-        </div>
-      </div>
+      <hr id="hr2-3" />
+
       <div class="content-section" id="section3">
         <div class="imgbox">
           <div class="section-img" id="section-img3">
-            <img src="gallery-img/gallery-dummy3.jpg" alt="dummyimg3" id="img3" />
+            <img src="gallery-img/gallery-dummy3.jpg" alt="dummyimg3" loading="lazy" class="img-cont" id="img3" />
           </div>
         </div>
         <div class="textbox">
           <div class="section-desc" id="section-desc3">
             <h2 class="section-desc-title" style="text-align: right">Big boi title 3</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum cum sint
-              aliquam molestiae ea aut reiciendis reprehenderit dolore, facere neque dignissimos. At
-              laboriosam tempora consequuntur, aperiam dicta consectetur vitae id ipsam porro
-              laudantium maiores debitis, deserunt recusandae corrupti obcaecati. Ipsa, vero?
-              Dolores impedit aspernatur ex deleniti necessitatibus quod beatae.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo est dignissimos atque
-              aliquid porro molestias in dolor maiores dolorem natus.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio facilis ab
-              praesentium odio provident voluptatibus et deleniti corrupti vitae voluptate nihil
-              iusto aliquid cumque dicta eius sit dolorum quos harum atque, consequatur velit?
-              Minus, esse ducimus voluptatibus sequi aliquam distinctio placeat, inventore ullam
-              sit, reprehenderit aliquid quia fuga est. Provident rem voluptatum voluptas inventore
-              id officiis, libero aliquam vitae veritatis, iusto fugiat deserunt ipsam perferendis
-              recusandae error odit nulla deleniti!
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio facilis ab praesentium odio provident voluptatibus et deleniti
+              corrupti vitae voluptate nihil iusto aliquid cumque dicta eius sit dolorum quos harum atque, consequatur velit? Minus, esse ducimus
+              voluptatibus sequi aliquam distinctio placeat, inventore ullam sit, reprehenderit aliquid quia fuga est. Provident rem voluptatum
+              voluptas inventore id officiis, libero aliquam vitae veritatis, iusto fugiat deserunt ipsam perferendis recusandae error odit nulla
+              deleniti!
             </p>
           </div>
         </div>
       </div>
+
+      <hr id="hr3-4" />
+
       <div class="content-section" id="section4">
         <div class="textbox">
           <div class="section-desc" id="section-desc4">
             <h2 class="section-desc-title" style="text-align: right">Big boi title 4</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum cum sint
-              aliquam molestiae ea aut reiciendis reprehenderit dolore, facere neque dignissimos. At
-              laboriosam tempora consequuntur, aperiam dicta consectetur vitae id ipsam porro
-              laudantium maiores debitis, deserunt recusandae corrupti obcaecati. Ipsa, vero?
-              Dolores impedit aspernatur ex deleniti necessitatibus quod beatae.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum cum sint aliquam molestiae ea aut reiciendis reprehenderit
+              dolore, facere neque dignissimos. At laboriosam tempora consequuntur, aperiam dicta consectetur vitae id ipsam porro laudantium maiores
+              debitis, deserunt recusandae corrupti obcaecati. Ipsa, vero? Dolores impedit aspernatur ex deleniti necessitatibus quod beatae.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo est dignissimos atque
-              aliquid porro molestias in dolor maiores dolorem natus.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio facilis ab
-              praesentium odio provident voluptatibus et deleniti corrupti vitae voluptate nihil
-              iusto aliquid cumque dicta eius sit dolorum quos harum atque, consequatur velit?
-              Minus, esse ducimus voluptatibus sequi aliquam distinctio placeat, inventore ullam
-              sit, reprehenderit aliquid quia fuga est. Provident rem voluptatum voluptas inventore
-              id officiis, libero aliquam vitae veritatis, iusto fugiat deserunt ipsam perferendis
-              recusandae error odit nulla deleniti!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo est dignissimos atque aliquid porro molestias in dolor maiores dolorem
+              natus.
             </p>
           </div>
         </div>
         <div class="imgbox">
           <div class="section-img" id="section-img4">
-            <img src="gallery-img/gallery-dummy4.jpg" alt="dummyimg4" id="img4" />
+            <img src="gallery-img/gallery-dummy4.jpg" alt="dummyimg4" loading="lazy" class="img-cont" id="img4" />
           </div>
         </div>
       </div>
     </div>
+
     <script>
       ScrollReveal().reveal("#section1");
       ScrollReveal().reveal("#section2");
