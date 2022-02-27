@@ -57,8 +57,8 @@ hr {
   margin: 3rem auto 3rem auto;
   border: 1rem solid transparent;
 
-  border-image: url("gallery-img/gallery-bg.jpg") 25% repeat;
-  background-image: url("gallery-img/gallery-content-bg.jpg");
+  border-image: url("gallery-img/gallery-frame.jpg") 25% repeat;
+  background-image: url("gallery-img/gallery-bg.jpg");
 
   background-repeat: repeat;
   box-shadow: 0px 0px 25px black, inset 3px 3px 25px rgb(60, 60, 60), inset -3px -3px 25px rgb(60, 60, 60);
