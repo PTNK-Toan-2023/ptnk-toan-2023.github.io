@@ -13,7 +13,6 @@ main {
     padding: 1 rem;
 }
 .navbar {
-    height: 4rem;
     width: 100vw;
     position: fixed;
     background-color:rgb(81, 173, 253);
@@ -26,22 +25,15 @@ main {
     display: flex;
     align-items: center;
 }
-.nav-items {
-    width: 6rem;    
-}
-.nav-items:first-child {
-    margin-right: auto;
-}
-.nav-items:last-child {
-    margin-right: 3rem;
-}
+
 .nav-link {
     display: flex;
     align-items: center;
 }
 .link-text{
     display: none;
-    color: beige;    
+    color: beige;
+    padding: 0;   
 }
 .nav-link img {
     position: top;
@@ -50,26 +42,10 @@ main {
     padding: 0;
     margin: 0;    
 }
-.navbar:hover {
-    height: 5rem;
+.nav-items:first-child {
+    margin-right: auto;
 }
-.navbar:hover .nav-link img {
-    width: 3rem;
-    height: 3rem;
-    position: relative;
-    bottom: 1rem;
-    
-}
-.navbar:hover #logo-lop{
-    width: 4rem;
-    height: 4rem;
-}
-.navbar:hover .link-text {
-    display: block;
-    position: relative;
-    top: 2rem;
-    right: 3.5rem    
-}
+
 #logo-lop {
     display: flex;
     align-items: center;
@@ -77,7 +53,7 @@ main {
     height: 3rem;
     padding: 0.5rem;
 }
-main{
+main {
     margin-bottom: 1rem;
 }
 hr {
@@ -87,8 +63,8 @@ hr {
 }
 footer {
     background: linear-gradient(to left, rgb(78,226,211), rgba(78,226,211,0));
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     
 }
 .footer-text {
@@ -96,10 +72,71 @@ footer {
     justify-content: center;
 }
 .footer-img {
-    width: 2rem;
-    height: 2rem;
     border-radius: 50%;
     margin-left: 10px;
     position: relative;
-    bottom: 10px
+}   
+#footer-facebook {
+    position: relative;
+    left: 15px;
+    top: 1rem;
+}
+/* man hinh toi da 600px */
+@media only screen and (max-width:600px) {
+    
+    .nav-items {
+        width: 3rem;
+    }
+    .navbar {
+        height: 4rem;
+    }
+    .footer-text {
+        font-size: 0.6rem;
+    }
+    .footer-img {
+        width: 2rem;
+        height: 2rem;
+        bottom: 10px
+    }
+}
+/* man hinh lon hon 600px*/
+@media only screen and (min-width:600px) {
+    .navbar {
+        height: 4rem;
+        width: 100vw;
+    }
+    .navbar:hover .nav-link img {
+        width: 3rem;
+        height: 3rem;
+        position: relative;
+        bottom: 1rem;
+        
+    }
+    .navbar:hover {
+        height: 5rem;
+    }
+    .navbar:hover .link-text {
+        display: inline-block;
+        position: relative;
+        top: 2rem;
+        right: 3.5rem    
+    }
+    .navbar:hover #logo-lop{
+        width: 4rem;
+        height: 4rem;
+    }
+    .nav-items {
+        width: 6rem;    
+    }
+    .footer-img {
+        width: 3rem;
+        height: 3rem;
+        bottom: 14px;
+    }
+    .nav-items:nth-child(2) {
+        margin-right: 0.25rem;
+    }
+    .nav-items:last-child {
+        margin-right: 2rem;
+    }
 }
