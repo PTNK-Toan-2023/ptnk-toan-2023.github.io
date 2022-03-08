@@ -95,9 +95,7 @@ hr {
 
   box-shadow: 3px 3px 20px black, inset 0px 0px 3px black;
 
-  transition-property: width, height, max-height, transform;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+  transition-property: transform, 0.5s, ease-in-out;
 }
 .section-desc {
   font: 425 1.2rem "Brush Script MT", "Brush Script Std", cursive;
@@ -113,9 +111,7 @@ hr {
   padding: 3px 8px 0px 8px;
 
   filter: drop-shadow(5px 5px 10px black);
-  transition-property: width, height, max-height, transform;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+  transition-property: transform, 0.5s, ease-in-out;
 }
 .section-desc:hover,
 .section-img:hover {
@@ -131,4 +127,20 @@ hr {
   font-weight: 700;
   line-height: min(16vh, 31.5px);
   margin-bottom: 4px;
+}
+.zoom {
+  z-index: 15;
+  position: fixed;
+
+  max-height: 80vh;
+  max-width: 80vw;
+
+  width: fit-content;
+  height: fit-content;
+
+  opacity: 0;
+
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
 }
