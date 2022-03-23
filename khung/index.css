@@ -1,69 +1,142 @@
 :root {
-  font: 13px;
-  font-family: "Courier New", Courier, monospace;
+    font: 12px;
+    font-family: 'Courier New', Courier, monospace;
 }
 body {
-  color: black;
-  background-color: whitesmoke;
-  margin: 0;
-  padding: 0;
+    color: black;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
 }
 main {
-  margin-top: 3.5rem;
-  padding: 1 rem;
+    margin-top: 4rem;
+    padding: 1 rem;
 }
 .navbar {
-  height: 3.5rem;
-  width: 100vw;
-  position: fixed;
-  background-color: aliceblue;
-  transition: 200ms ease;
+    width: 100vw;
+    position: fixed;
+    background-color:rgb(81, 173, 253);
+    transition: 200ms ease;
 }
 .navbar-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-.nav-items {
-  width: 10rem;
-}
-.nav-items:first-child {
-  margin-right: auto;
-}
-.nav-link {
-  display: flex;
-  align-items: center;
-}
-.link-text {
-  display: none;
-  margin-left: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
-.nav-link svg {
-  width: 3rem;
-  height: 3rem;
-  fill: #3caf96;
+.nav-link {
+    display: flex;
+    align-items: center;
 }
-.navbar:hover {
-  height: 5rem;
+.link-text{
+    display: none;
+    color: beige;
+    padding: 0;   
 }
-.navbar:hover .nav-link svg {
-  width: 4rem;
-  height: 4rem;
-  fill: #31e6bf;
+.nav-link img {
+    position: top;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    margin: 0;    
 }
-.navbar:hover .link-text {
-  display: block;
+.nav-items:first-child {
+    margin-right: auto;
 }
+
 #logo-lop {
-  display: flex;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
+    display: flex;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
 }
-.ithelp-logo {
-  width: 48px;
-  height: 48px;
+main {
+    margin-bottom: 1rem;
+}
+hr {
+    
+    padding: 0;
+    margin: 0;
+}
+footer {
+    background: linear-gradient(to left, rgb(78,226,211), rgba(78,226,211,0));
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+.footer-text {
+    display: flex;
+    justify-content: center;
+}
+.footer-img {
+    border-radius: 50%;
+    margin-left: 10px;
+    position: relative;
+}   
+#footer-facebook {
+    position: relative;
+    left: 15px;
+    top: 1rem;
+}
+/* man hinh toi da 600px */
+@media only screen and (max-width:600px) {
+    
+    .nav-items {
+        width: 3rem;
+    }
+    .navbar {
+        height: 4rem;
+    }
+    .footer-text {
+        font-size: 0.6rem;
+    }
+    .footer-img {
+        width: 2rem;
+        height: 2rem;
+        bottom: 10px
+    }
+}
+/* man hinh lon hon 600px*/
+@media only screen and (min-width:600px) {
+    .navbar {
+        height: 4rem;
+        width: 100vw;
+    }
+    .navbar:hover .nav-link img {
+        width: 3rem;
+        height: 3rem;
+        position: relative;
+        bottom: 1rem;
+        
+    }
+    .navbar:hover {
+        height: 5rem;
+    }
+    .navbar:hover .link-text {
+        display: inline-block;
+        position: relative;
+        top: 2rem;
+        right: 3.5rem    
+    }
+    .navbar:hover #logo-lop{
+        width: 4rem;
+        height: 4rem;
+    }
+    .nav-items {
+        width: 6rem;    
+    }
+    .footer-img {
+        width: 3rem;
+        height: 3rem;
+        bottom: 14px;
+    }
+    .nav-items:nth-child(2) {
+        margin-right: 0.25rem;
+    }
+    .nav-items:last-child {
+        margin-right: 2rem;
+    }
 }
