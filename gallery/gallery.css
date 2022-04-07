@@ -8,14 +8,12 @@ html,
 body {
   width: 100%;
   height: fit-content;
-}
-html {
-  --viewportWidth: 100vw;
   overflow-x: hidden;
 }
 body {
   background-color: grey;
 }
+
 hr {
   width: 50%;
   height: 1ch;
@@ -27,11 +25,12 @@ hr {
   transition: width 0.5s linear;
 }
 .hr-hide {
-  width: 1px;
+  width: 0;
 }
 .scroll-fade-hide {
   opacity: 0;
 }
+
 .cover {
   visibility: hidden;
 
@@ -47,6 +46,7 @@ hr {
   opacity: 0;
   transition: opacity 0.5s linear, visibility 0.5s linear;
 }
+
 
 .gallery-title {
   font: 800 min(5rem, 10vw) "Brush Script MT", "Brush Script Std", cursive;
@@ -71,7 +71,9 @@ hr {
   background-repeat: repeat;
   box-shadow: 0px 0px 25px black, inset 3px 3px 10px black, inset -3px -3px 10px black;
 }
-.content-section {
+
+
+.section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -80,8 +82,10 @@ hr {
   height: fit-content;
   margin: 5vh 0 0 0;
 
-  transition: opacity 0.5s linear;
+  transition: opacity 1s linear;
 }
+
+
 .textbox,
 .imgbox {
   display: flex;
@@ -92,6 +96,8 @@ hr {
   height: min(60vh, 50%);
   margin: 5vh auto 5vh auto;
 }
+
+
 .section-img {
   line-height: 0;
   background-color: white;
@@ -103,30 +109,30 @@ hr {
 
   transition: transform 0.25s ease-in-out;
 }
+.section-img:hover{
+  cursor: pointer;
+}
+.img-cont {
+  max-width: 35vw;
+  max-height: 50vh;
+}
+
+
 .section-desc {
   font: 425 1.2rem "Brush Script MT", "Brush Script Std", cursive;
   line-height: min(8vh, 31.5px);
 
-  max-height: 45vh;
   min-width: 16ch;
   width: min(75%, 50ch);
   height: fit-content;
 
   z-index: 2;
-  overflow: hidden;
-  padding: 3px 8px 0px 8px;
 
   filter: drop-shadow(5px 5px 10px black);
   transition: transform 0.25s ease-in-out;
 }
-.section-desc:hover,
-.section-img:hover {
+.section-desc:hover{
   cursor: pointer;
-}
-
-.img-cont {
-  max-width: 35vw;
-  max-height: 50vh;
 }
 .section-desc-title {
   font-size: max(16px, 1.5rem);
@@ -134,6 +140,19 @@ hr {
   line-height: min(16vh, 31.5px);
   margin-bottom: 4px;
 }
+.section-desc-content {
+  padding: 3px 8px 0px 8px;
+  
+  max-height: 45vh;
+  height: fit-content;
+  overflow: hidden;
+}
+.readMore{
+  padding: 3px 8px 0px 8px;
+
+  color: blue;
+}
+
 .zoom {
   z-index: 15;
   position: fixed;
