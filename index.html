@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script>
+        $(document).ready(function () {
+            $("#nav").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>    
     <!-- phan nay ghi nhung thong tin genereal ve phan mem nhu icon, site title, font, gg analytics -->
 </head>
 
 <body>
-    <header>
-        <!--phan nay ghi header -- menu, ..-->
-    </header>
-    <section class ='header'>
+    <div id="header"></div>
+    <div class ='header'>
         <!--ghi the main thing: picture, file  -->
         <div class="mainpic">
             <h1>Phổ Thông Năng Khiếu Toán 2023 </h1>
             <p>Đây là website chính thức của lớp Toán khóa 20-23 trường Phổ Thông Năng Khiếu.</p>
         </div>
-    </section>
-    <section >
+    </div>
+    <section>
         <div class="leak">
             Chúng tôi là những con người...
         </div>
@@ -48,10 +51,6 @@
             Cùng khám phá tập thể lớp Toán 20-23 trong website này nhé!
         </div>
     </section>
-
-
-    <footer>
-        <!--ghi footer : vd : Link to facebook lop;copyright, proudly created by the ithelp project   -->
-    </footer>
+    <div id="footer"></div>
 </body>
 </html>

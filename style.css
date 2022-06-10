@@ -14,7 +14,7 @@ body {
   background-image: url("bar.jpg");
   background-position: center;
   background-size: cover;
-  position: relative;
+
 }
 .mainpic {
   width: 90%;
