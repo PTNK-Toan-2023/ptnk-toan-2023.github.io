@@ -1,56 +1,197 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        $(document).ready(function () {
-            $("#nav").load("header.html");
-            $("#footer").load("footer.html");
-        });
-    </script>    
-    <!-- phan nay ghi nhung thong tin genereal ve phan mem nhu icon, site title, font, gg analytics -->
-</head>
+    <title>NKCT</title>
+    <link rel="icon" href="Pictures/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
 
+<style>
+    body{
+	line-height: 1.5;
+}
+.home{
+    width: 100%; 
+    height: 100vh;
+    transform: translateZ(0);
+    overflow: hidden;
+    
+}
+
+.backgroundcover{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    background: linear-gradient(rgba(16, 180, 205, 0.75), 
+    rgba(17, 56, 230, 0.75));
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.parallax{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Title */
+.title{    
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+@keyframes Header_Transition {
+    0%{
+        transform: translateY(40px);
+        color: transparent;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.title h1{
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    animation: Header_Transition 0.6s ease-out;
+}
+
+@keyframes Description_Transition {
+    0%{
+        transform: translateY(60px);
+        color: transparent;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.title p{
+    text-transform: uppercase;
+    margin: 0 2.5vw;
+    padding: 0;
+    animation: Description_Transition 1s ease-out;
+}
+
+@keyframes Button_Transition {
+    0%{
+        transform: translateY(100px);
+        color: transparent;
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.title div a button{
+    color: white;
+    font-size: 1.5rem;
+    width: 190px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 20 25px;
+    padding: 0;
+    border: 3px solid rgb(255, 96, 96);
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+
+    animation: Button_Transition 1s ease-out;
+}
+/* Format span hiệu ứng của button */
+.BtnContainer button span{
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    background-color: rgb(255, 96, 96);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.2s;
+}
+
+.title div a button:hover{
+    border: transparent;
+    color: rgb(15, 15, 15);
+}
+
+.BtnContainer button:hover span{
+    width: 100%;
+    border: 3px solid rgb(255, 106, 106);
+}
+
+/* Khi media lớn như pc */
+@media screen and (min-width: 801px) {
+    .navbar ul li a {
+        font-size: 20px;
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+        background-color: rgb(255, 96, 96);
+    }
+    .navbar ul li a:hover{
+        color: rgb(197, 233, 221);
+    }
+    .title h1{
+        font-size: 70px;
+    }
+    .title p{
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+    .BtnContainer{
+        display: flex;
+        justify-content: center;
+    }
+  }
+</style>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
+
+</head>
 <body>
     <div id="header"></div>
-    <div class ='header'>
-        <!--ghi the main thing: picture, file  -->
-        <div class="mainpic">
-            <h1>Phổ Thông Năng Khiếu Toán 2023 </h1>
-            <p>Đây là website chính thức của lớp Toán khóa 20-23 trường Phổ Thông Năng Khiếu.</p>
+    <div class="home">
+        <div class="backgroundcover"></div>
+        <img src="lopbg.jpg" class="parallax">
+        <div class="title">
+            <h1>PTNK Toán 20-23</h1>
+            <p>Website này lập ra để tập thể Toán 2023 hái tàu  </p>
         </div>
     </div>
-    <section>
-        <div class="leak">
-            Chúng tôi là những con người...
-        </div>
-            <section class="Characteristic" >
-                <img src="google.jpg">
-                <h1>Thân thiện</h1>
-                <p>Ở đây, chúng tôi chào đón tất cả mọi người, không phân biệt vùng miền!</p>
-            </section>
 
-            <section class="Characteristic" >
-                <img src="google.jpg">
-                <h1>Vui vẻ</h1>
-                <p>"Mỗi ngày đến trường là một ngày vui". Mọi người trong lớp chúng tôi đều cảm thấy như vậy.</p>
-            </section>
 
-            <section class="Characteristic" >
-                <img src="google.jpg">
-                <h1>Hài hước</h1>
-                <p>"Thay vì làm toán, chúng tôi làm trò" <br>- Slogan của lớp -</p>
-            </section>
-
-       </div>
-        <div class ="leak">
-            Cùng khám phá tập thể lớp Toán 20-23 trong website này nhé!
-        </div>
-    </section>
     <div id="footer"></div>
+
+    <script src="main.js"></script>
 </body>
 </html>
