@@ -21,15 +21,13 @@
     justify-content: center;
 }
 
-body{
-    background-color: white;
-}
+
 
 /* Navbar */
 .navbar{
-    position: absolute;
+    position: relative;
     width: 100vw;
-    height: 40px;
+    height: 60px;
     margin: auto;
     padding: 35px 0px;
     display: flex;
@@ -42,19 +40,15 @@ body{
 .black{
     background-color: rgb(0, 0, 0);
     width: 100vw;
-    height: 40px;
+    height: 60px;
 
     animation: Navbar_Transition 0.6s ease-in-out;
-}
-.black a .Logo{
-    transform: translateX(60px);
-}
-.navbar a .Logo{
-    transform: translateX(60px);
 }
 .Logo{
     height: 13vh;
     z-index: 5;
+    position: inherit;
+    transform: translate(60px);
 }
 .navbar ul.PC_navbar li{
     list-style: none;
@@ -308,7 +302,6 @@ ul.PC_navbar{
         width: 60px;
         height: auto;
         margin-left: 25px;
-        background-color: white;
     }
     .navbar{
         background-color: rgb(41, 40, 40);
@@ -320,7 +313,7 @@ ul.PC_navbar{
     }
     .navbar a .Logo{
         transform: translateX(0px);
-    }
+    }    
   }
 
     </style>
@@ -331,7 +324,7 @@ ul.PC_navbar{
             <!-- Xài đỡ do chưa có logo trắng -->
             <a href="index.html"><img src="logo.png" alt="Logo" class="Logo"></a>
             
-            <ul class="PC_navbar">
+            <ul class="PC_navbar">                
                 <li><a href="index.html">Homepage</a></li>
                 <li><a href="members.html"> Members</a></li>
                 <li><a href="gallery.html">Gallery</a></li>

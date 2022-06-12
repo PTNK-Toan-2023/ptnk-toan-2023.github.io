@@ -7,8 +7,7 @@ ol > li{
     padding: 0;
     font-family: 'Helvetica Neue';
     font-weight: normal;
-    font-style: normal;
-    overflow-x: hidden;
+    font-style: normal;    
 }
 #myBtn {
     display: none;  /*Hidden by default */
@@ -31,11 +30,8 @@ ol > li{
 .header{
     min-height: 37vh;
     width: 100%;
-    background-position: center;
-    background-size: cover;
     position: relative;
-    overflow-x: visible;
-    background-color: black;
+    background-color: rgb(117, 77, 216);
 }
 .header-text-box {
     width: 90%;
