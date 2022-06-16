@@ -53,13 +53,13 @@
     position: absolute;
 }
 
-.backgroundcover {
+.backgroundcover{
     position: absolute;
     margin: 0;
     left: 0;
     top: 0;
-    background: linear-gradient(rgba(10, 0, 0, 0.75),
-            rgba(0, 10, 0, 0.75));
+    background: linear-gradient(rgba(16, 180, 205, 0.75), 
+    rgba(17, 56, 230, 0.75));
     width: 100vw;
     height: 100vh;
     z-index: -1;
