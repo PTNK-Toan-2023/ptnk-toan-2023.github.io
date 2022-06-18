@@ -2,7 +2,10 @@
     font-family: Iciel;
     src: url(../font/Iciel.ttf);
 }
-
+@font-face {
+    font-family: Iciel;
+    src: url(https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap);
+}
 
 * {
     margin: 0;
