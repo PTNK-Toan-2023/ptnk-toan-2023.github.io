@@ -3,10 +3,6 @@
     src: url(../font/Iciel.ttf);
 }
 
-@font-face {
-    font-family: Oswald;
-    src: url(../font/Oswald.ttf);
-}
 
 * {
     margin: 0;
