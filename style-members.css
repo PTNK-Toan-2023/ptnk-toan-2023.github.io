@@ -3,15 +3,9 @@
     src: url(../font/Iciel.ttf);
 }
 
-
 @font-face {
-    font-family: BebasNeue-Regular;
-    src: url(../font/UTM\ Bebas.ttf);
-}
-
-@font-face {
-    font-family: Montserrat-Regular;
-    src: url(../font/Montserrat-Regular.ttf);
+    font-family: Oswald;
+    src: url(../font/Oswald.ttf);
 }
 
 * {
@@ -93,7 +87,7 @@
 }
 
 .title h1 {
-    font-family: BebasNeue-Regular;
+    font-family: Oswald;
     text-transform: uppercase;
     padding: 0;
     margin: 0;
@@ -113,7 +107,7 @@
 }
 
 .title p {
-    font-family: Montserrat-Regular;
+    font-family: Iciel;
     text-transform: uppercase;
     margin: 0 2.5vw;
     padding: 0;
@@ -181,7 +175,7 @@
     .members h1 {
         text-align: center;
         font-size: 7rem;
-        font-family: BebasNeue-Regular;
+        font-family: Oswald;
         text-transform: uppercase;
     }
 }
@@ -189,7 +183,7 @@
     .members h1 {
         text-align: center;
         font-size: 4rem;
-        font-family: BebasNeue-Regular;
+        font-family: Oswald;
         text-transform: uppercase;
     }
 }
